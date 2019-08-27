@@ -1,6 +1,6 @@
 # Imagine Learning FrontEnd Interview
 
-An Angular Coding Exercise
+An Angular Coding Exercise :)
 
 ## Purpose
 To demonstrate proficiency in developing a simple web application with the Angular framework.
