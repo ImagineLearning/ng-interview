@@ -10,8 +10,11 @@ To complete this exercise, you will need a working knowledge of Angular, as well
 
 In the end, you will provide a link to a GitHub repository containing the working implementation of the requirements specified below.
 
+## Prerequisites
+Before you can start follow the instructions [outlined](REPOINFO.md) to to set up your development environment.
+
 ## Getting Started
-This repository is an application to get you started. Follow the instructions [outlined](REPOINFO.md) to to set up your development environment.
+This repository is an application to get you started.
 
 ## Requirements
 Listed below are the features that should be completed with this project. You should also include a set of unit tests which demonstrate your solution adequately meets the requirements.
