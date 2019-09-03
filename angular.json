@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "il-fe-interview": {
+    "ng-interview": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/il-fe-interview",
+            "outputPath": "dist/ng-interview",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "il-fe-interview:build"
+            "browserTarget": "ng-interview:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "il-fe-interview:build:production"
+              "browserTarget": "ng-interview:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "il-fe-interview:build"
+            "browserTarget": "ng-interview:build"
           }
         },
         "test": {
@@ -108,7 +108,7 @@
         }
       }
     },
-    "il-fe-interview-e2e": {
+    "ng-interview-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "il-fe-interview:serve"
+            "devServerTarget": "ng-interview:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "il-fe-interview:serve:production"
+              "devServerTarget": "ng-interview:serve:production"
             }
           }
         },
@@ -137,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "il-fe-interview"
+  "defaultProject": "ng-interview"
 }

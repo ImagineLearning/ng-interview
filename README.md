@@ -1,40 +1,97 @@
-# Imagine Learning FrontEnd Interview
+# ng-interview — a sample Angular app
 
-An Angular Coding Exercise :)
+## TL;DR
 
-## Purpose
-To demonstrate proficiency in developing a simple web application with the Angular framework.
+1. Fork this repository on GitHub
+2. Run `npm install`
+3. Run `npm start`
+4. Browse to [http://localhost:4200](http://localhost:4200/)
 
-## Expectations
-To complete this exercise, you will need a working knowledge of Angular, as well as familiarity with Git and Node.js. There is no set time limit on the project, but ideally it should take less than an hour.
+## Introduction
 
-In the end, you will provide a link to a GitHub repository containing the working implementation of the requirements specified below.
+This project is a simple [Angular](https://angular.io) web app for front end developer candidates.
 
-## Prerequisites
-Before you can start follow the instructions [outlined](REPOINFO.md) to to set up your development environment.
+The project is preconfigured to install the Angular framework and a bunch of development and testing tools
+for quickly setting up your development environment.
+
+The app doesn't do much, that part is up to the applicant.
 
 ## Getting Started
-This repository is an application to get you started.
 
-## Requirements
-Listed below are the features that should be completed with this project. You should also include a set of unit tests which demonstrate your solution adequately meets the requirements.
+To get you started you can simply fork the [ng-interview][ng-interview] repository, clone it locally, and install the dependencies.
 
-## Students API Service
-As an education company, we deal with student data a lot. We have a simple API for you to query sample student data to use in your application.
+### Prerequisites
 
-Implement a function in StudentsService (app/services/api/students/students.service.js) to retrieve a list of students from http://il-resume-api.azurewebsites.net/api/students. 
+You need to have git installed locally so you can clone your fork of the ng-interview repository. You can get git from
+[http://git-scm.com/](http://git-scm.com/).
 
-We should warn you though, the API has some issues. Sometimes it gets bogged down and will return a 503 Service Unavailable error. When that happens, your application should automatically retry the request. This problem may exist with other API endpoints as well, so you should implement a solution that can be easily reused.
+You must have node.js and its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-Additionally, from time to time the API will give back invalid JSON. Be sure your application handles such responses appropriately and doesn't just blow up.
+### Fork and Clone ng-interview
 
-## Students View
-Once you have your service implemented to retrieve student data, you’ll want to hook it up to the students view (app/students) of the application. In the view, display a list of student names. When the user clicks on a student’s name, it will display the additional information about the student provided in the JSON.
+Fork the [ng-interview][ng-interview] repository on GitHub.
+If you are unfamiliar with forking, [follow these instructions](http://lmgtfy.com/?q=how+to+fork+a+repo+in+github).
 
-Make sure you’ve handled errors appropriately, and notify the user of an error in the UI if necessary.
+Then clone your repository locally using git:
 
-## Students Filter
-Once you have a list of students displayed in the students view, add a search field above your list of students. Users can type text into the search field, and the list of students will be limited to only the students whose names match (or partially match) the search text.
+```
+git clone https://github.com/YOUR-USERNAME/ng-interview.git
+cd ng-interview
+```
 
-## Project Submission
-Push your changes to your forked repository on GitHub, then email us a link to your repository. Please make sure the repository is not private so we can view your code. We look forward to reviewing what you’ve done!
+*Note: Be sure to replace the URL with the correct URL to your forked repository.*
+
+### Install Dependencies
+
+Installing the dependencies to this project is as simple as 
+
+```
+npm install
+```
+
+You should find that you have one new folder in your project.
+
+* `node_modules` - contains the npm packages for the tools we need
+
+*Note that the running `npm install` will set you up with angular cli which we hope you would use.*
+
+### Run the Application
+
+This application was generated via angular cli.  The application is preconfigured with a simple development web server.  The simplest way to start
+this server is:
+
+```
+npm start
+```
+
+and can be viewed at `http://localhost:4200`.
+
+## Testing
+
+There are two kinds of tests in the ng-interview application: Unit tests and end-to-end tests.  For this exercise we will disregard the end-to-end tests.
+
+### Running Unit Tests
+
+The easiest way to run the unit tests is to use the supplied npm script:
+
+```
+npm test
+```
+
+### Checking Code Coverage
+
+Code coverage is something we value here at Imagine Learning.  Angular comes with code coverage report which we have enabled.
+
+The following command should generate a coverage folder with details of the report which should be accessible by opening the `coverage/ng-interview/index.html` file in your browser.
+
+```
+npm test:code-coverage-report
+```
+
+## Contact
+
+For more information on Angular please check out [https://angular.io](https://angular.io)
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
